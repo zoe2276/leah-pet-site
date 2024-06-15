@@ -15,7 +15,7 @@ export const NavBar = () => {
                         Leah's Pet Care
                     </div>
                     <div className="nav-description">
-                        High quality pet care in Kansas City
+                        High quality pet care{/*  in Kansas City */}
                     </div>
                 </div>
                 <div className="nav-button">
