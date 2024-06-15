@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+import * as React from "react";
 import './App.css';
+import logo from './logo.svg';
+// import * as Components from "./components/index.js";
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
         </p>
       </header>
     </div>
+    // <>
+    //   <Components.NavBar />
+    // </>
   );
 }
 
