@@ -1,0 +1,76 @@
+.navbar {
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    
+    border-bottom: 2px solid var(--color-shadow);
+    border-radius: 16px;
+    box-shadow: 0 10px 5px -5px var(--color-shadow-dim);
+
+    background-color: var(--color-2);
+}
+
+.nav-button {
+    flex: 1 2 auto;
+}
+
+.nav-info {
+    flex: 2 1 auto;
+    text-align: center;
+}
+
+.nav-title {
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.nav-description {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.nav-links {
+    display: none;
+
+    left: -200px;
+    transition: left 2s allow-discrete;
+}
+
+.nav-links.open {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+
+    z-index: 100;
+    position: absolute;
+    overflow: auto;
+
+    border-right: 1px solid var(--color-shadow);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 0 5px -5px var(--color-shadow-dim);
+    
+    background-color: var(--color-3);
+
+    left: 0;
+    transition: left 2s allow-discrete;
+}
+
+.nav-links a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+
+    color: var(--color-shadow);
+}
+
+.nav-links a.active {
+    background-color: var(--color-1);
+}
+
+.nav-links a:hover:not(.active) {
+    background-color: var(--color-1-dim);
+}

@@ -1,0 +1,18 @@
+.button {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+}
+
+.button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.button:hover {
+    background-color: var(--color-3-dim);
+}
+
+.button.active-button {
+    background-color: var(--color-3);
+}
