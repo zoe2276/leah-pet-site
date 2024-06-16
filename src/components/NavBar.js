@@ -4,6 +4,24 @@ import "./components.css";
 import * as Button from "./buttons/index";
 
 export const NavBar = () => {
+    const currentPage = window.location.pathname.substring(1);
+
+    const updateActivePage = React.useCallback(() => {
+        !currentPage ? 
+            document.querySelectorAll("a").forEach(e => {
+                e.innerText.toLowerCase() === "Home".toLowerCase() ?
+                    e.classList.add("active") :
+                    e.classList.remove("active");
+            }) :
+            document.querySelectorAll("a").forEach(e => {
+                e.innerText.toLowerCase() === currentPage.toLowerCase() ?
+                    e.classList.add("active") :
+                    e.classList.remove("active");
+            });
+    }, [currentPage]);
+
+    React.useEffect(updateActivePage);
+    
     return (
         <>
             <div className="navbar">
@@ -23,7 +41,7 @@ export const NavBar = () => {
                 </div>
             </div>
             <div className="nav-links">
-                <a href="/" className="active" >Home</a>
+                <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/services">Services</a>
                 <a href="/contact">Contact</a>
