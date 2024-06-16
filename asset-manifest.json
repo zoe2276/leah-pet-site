@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/leah-pet-site/static/css/main.5fb902e3.css",
-    "main.js": "/leah-pet-site/static/js/main.806247d9.js",
-    "static/js/453.2a60cedd.chunk.js": "/leah-pet-site/static/js/453.2a60cedd.chunk.js",
-    "static/media/logo.svg": "/leah-pet-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/leah-pet-site/index.html",
-    "main.5fb902e3.css.map": "/leah-pet-site/static/css/main.5fb902e3.css.map",
-    "main.806247d9.js.map": "/leah-pet-site/static/js/main.806247d9.js.map",
-    "453.2a60cedd.chunk.js.map": "/leah-pet-site/static/js/453.2a60cedd.chunk.js.map"
+    "main.css": "/static/css/main.5fb902e3.css",
+    "main.js": "/static/js/main.22b810a3.js",
+    "static/js/453.2a60cedd.chunk.js": "/static/js/453.2a60cedd.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.5fb902e3.css.map": "/static/css/main.5fb902e3.css.map",
+    "main.22b810a3.js.map": "/static/js/main.22b810a3.js.map",
+    "453.2a60cedd.chunk.js.map": "/static/js/453.2a60cedd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fb902e3.css",
-    "static/js/main.806247d9.js"
+    "static/js/main.22b810a3.js"
   ]
 }
