@@ -1,0 +1,25 @@
+.nav-title, .nav-title * {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+  font-family: "Playwrite FR Moderne", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-description {
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-links a {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}

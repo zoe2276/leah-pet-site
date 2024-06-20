@@ -1,14 +1,17 @@
 .navbar {
-    padding: 10px;
+    padding: 1%;
+    width: 98%;
 
+    position: fixed;
     display: flex;
     justify-content: space-evenly;
     
     border-bottom: 2px solid var(--color-shadow);
-    border-radius: 16px;
+    border-radius: 0 0 16px 16px;
     box-shadow: 0 10px 5px -5px var(--color-shadow-dim);
 
     background-color: var(--color-2);
+    color: var(--color-shadow);
 }
 
 .nav-button {
@@ -22,41 +25,43 @@
 
 .nav-title {
     font-size: 28px;
-    font-weight: 100;
+}
+
+.nav-title span {
+    font-size: 22px;
 }
 
 .nav-description {
     font-style: italic;
-    font-weight: 100;
 }
 
 .nav-links {
     display: none;
 
-    left: -200px;
-    transition: left 2s allow-discrete;
-}
-
-.nav-links.open {
-    display: block;
     margin: 0;
     padding: 0;
     width: 200px;
     height: 100%;
 
     z-index: 100;
-    position: absolute;
+    position: fixed;
     overflow: auto;
 
     border-right: 1px solid var(--color-shadow);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0 10px 10px 0;
     box-shadow: 10px 0 5px -5px var(--color-shadow-dim);
     
     background-color: var(--color-3);
 
+    left: -200px;
+    transition: left 2s;
+}
+
+.nav-links.open {
+    display: block;
+
     left: 0;
-    transition: left 2s allow-discrete;
+    transition: left 2s;
 }
 
 .nav-links a {
@@ -73,4 +78,24 @@
 
 .nav-links a:hover:not(.active) {
     background-color: var(--color-1-dim);
+}
+
+.page-container {
+    position: relative;
+    z-index: -1;
+}
+
+.panel {
+    width: 90%;
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 400px;
 }
