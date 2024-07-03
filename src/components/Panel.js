@@ -1,14 +1,15 @@
 import * as React from "react";
 
-export const Panel = () => {
+export const Panel = ({textComp = '', imgComp = '', overlay = false}) => {
     return (
         <>
             <div className="panel">
                 <div className="image-container">
-                    image
+                    {imgComp && imgComp}
+                    
                 </div>
                 <div className="text-container">
-                    there is some text here
+                    {textComp && textComp}
                 </div>
             </div>
         </>

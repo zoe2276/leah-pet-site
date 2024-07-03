@@ -31,7 +31,7 @@ export const NavBar = () => {
                     </div>
                     <div className="nav-info">
                         <div className="nav-title">
-                            My Pet Pal
+                            The Pet Nanny
                         </div>
                         <div className="nav-description">
                             High quality pet care{/*  in Kansas City */}
