@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import logo from './logo.svg';
+import logo from '../logo.svg';
 
 export const UnderConstruction = () => {
     return (
