@@ -1,10 +1,10 @@
 import * as React from "react";
+import { Outlet } from "react-router-dom";
 
 import './App.css';
 import "./funcs.css";
 import "./fonts.css";
 
-// import logo from './logo.svg';
 import * as Components from "./components/index.js";
 
 function App() {
@@ -34,26 +34,12 @@ function App() {
     })
   })
 
-  const panel1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Commodo quis imperdiet massa tincidunt nunc."
-  const panel2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor eget dolor morbi non arcu risus quis varius quam. Nec feugiat in fermentum posuere."
-  const panel3 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse sed nisi lacus sed viverra tellus in. Donec adipiscing tristique risus nec feugiat in."
-
   return (
     <>
       <Components.NavBar />
       <div className="page-container">
-        <Components.Panel textComp={panel1} />
-        <Components.Panel textComp={panel2} />
-        <Components.Panel textComp={panel3} />
+        <Outlet />
       </div>
-      {/* <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            <span className="header">This site is under construction.</span><br />Check back soon!
-          </p>
-        </header>
-      </div> */}
     </>
   );
 }

@@ -1,9 +1,11 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import "./components.css";
 
 import * as Button from "./buttons/index";
 
 export const NavBar = () => {
+    /*
     const currentPage = window.location.pathname.substring(1);
 
     const updateActivePage = React.useCallback(() => {
@@ -21,7 +23,10 @@ export const NavBar = () => {
     }, [currentPage]);
 
     React.useEffect(updateActivePage);
-    
+    */
+
+    const handleActiveRoute = (isActive, isPending) => isActive ? "active" : isPending ? "pending" : ""
+
     return (
         <>
             <div nav-container>
@@ -42,10 +47,10 @@ export const NavBar = () => {
                     </div>
                 </div>
                 <div className="nav-links">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/services">Services</a>
-                    <a href="/contact">Contact</a>
+                    <NavLink to={"/"} className={({isActive, isPending}) => handleActiveRoute(isActive, isPending)}>Home</NavLink>
+                    <NavLink to={"/about"} className={({isActive, isPending}) => handleActiveRoute(isActive, isPending)}>About</NavLink>
+                    <NavLink to={"/services"} className={({isActive, isPending}) => handleActiveRoute(isActive, isPending)}>Services</NavLink>
+                    <NavLink to={"/contact"} className={({isActive, isPending}) => handleActiveRoute(isActive, isPending)}>Contact</NavLink>
                 </div>
             </div>
         </>
